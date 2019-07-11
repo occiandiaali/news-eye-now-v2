@@ -1,5 +1,7 @@
 {
   "name": "news-eye",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

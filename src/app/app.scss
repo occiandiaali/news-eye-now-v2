@@ -4,3 +4,18 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+.app-backdrop {
+    --background: #ecb588;
+}
+.top-bar {
+    --background: #b45a10;
+    --color: #fff;
+}  
+.content-background {
+    --background: #351903;
+    --color: #fff;
+}
+.story-button {
+    border: #b45a10;
+}
