@@ -1,1 +1,18 @@
+#about-card {
+    text-align: center;
+    padding: .5em;
+    background-color: burlywood;
+    color: brown;
+}
 
+@media screen and (min-width: 420px) {
+    #logo {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    h2 {
+        text-align: center;
+        color: brown;
+    }
+}

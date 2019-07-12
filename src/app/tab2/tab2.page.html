@@ -6,7 +6,23 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark" padding>
-  <ion-img src="../assets/eyes-logo-main.png" alt=""></ion-img>
-  <h2>Get all the latest news in business, sports, tech, entertainment, and health from the WWW</h2>
+<ion-content class="app-backdrop" padding>
+  <ion-img src="../assets/eyes-logo-main.png" alt="" id="logo"></ion-img>
+  <ion-card-header>
+      <ion-title><h2>What is News Eye?</h2></ion-title>
+    </ion-card-header>
+  <ion-card id="about-card">
+      <h3>
+          News Eye is your one-stop window to all the latest news on the World Wide Web.
+          We find all the news from various sources, and on various topics such as Sports, Business, Entertainment, and Tech.
+          Watch out for more categories soon..
+        </h3>
+        <h4>Send us a message</h4>
+        <ion-icon name="arrow-round-down"></ion-icon>
+        <ion-input placeholder="Enter your email"></ion-input>
+        <ion-item>
+         <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+       </ion-item>
+        <ion-button color="success" ion-button fill="outline" href="#" large>Reach out</ion-button>
+  </ion-card>
 </ion-content>
