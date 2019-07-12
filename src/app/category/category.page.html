@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar class="top-bar">
+  <ion-title>
+       {{pageCategory}}
+  </ion-title>
+  <ion-icon slot="end" name="arrow-round-back" [routerLink]="'/tab3'" padding></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="app-backdrop">
+    <ion-card *ngFor="let article of articles" class="content-background">
+      <ion-spinner *ngIf="!articles" name="dots"></ion-spinner>
+      <ion-img src="{{article.urlToImage}}" class="url-img"></ion-img>
+      
+      <ion-card-content class="descOverlay">
+          <ion-card-header>
+              <h2><a href="{{article.url}}" target="_blank">{{article.title}}</a></h2>
+            </ion-card-header>
+        <h3>
+          {{article.description}}
+        </h3>
+        <h5 *ngIf="article.author === null; else elseBlock" class="subtitles">Published by - Anonymous</h5>
+         <ng-template #elseBlock><h5 class="subtitles">Published by - {{article.author}}</h5></ng-template>
+         <p class="subtitles">{{article.publishedAt | date}}</p>
+        <ion-button ion-button fill="outline" large color="secondary" (click)="openWebPage(article.url)" class="story-button">Get full story</ion-button>
+        </ion-card-content>
+    </ion-card>
+    
+</ion-content>
+
