@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  category;
 
-}
+  constructor(public router: Router) {}
+
+  go(event: string) {
+    this.category = event;
+    this.router.navigateByUrl(`category/${this.category}`);
+  }
+
+} // class
