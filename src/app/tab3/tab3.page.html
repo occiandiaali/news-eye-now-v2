@@ -3,24 +3,25 @@
     <ion-title>
       Categories
     </ion-title>
+    <ion-icon slot="end" name="arrow-round-back" [routerLink]="''" padding></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
     <ion-list class="content-background">
-        <ion-item>
+        <ion-item [routerLink]="'/category/entertainment'" routerDirection="forward" (ionChange)="go($event)">
           <ion-label>Entertainment</ion-label>
         </ion-item>
-        <ion-item>
+        <ion-item [routerLink]="'/category/business'" routerDirection="forward" (ionChange)="go($event)"> 
           <ion-label>Business</ion-label>
         </ion-item>
-        <ion-item>
+        <ion-item [routerLink]="'/category/health'" routerDirection="forward" (ionChange)="go($event)">
           <ion-label>Health</ion-label>
         </ion-item>
-        <ion-item>
+        <ion-item [routerLink]="'/category/technology'" routerDirection="forward" (ionChange)="go($event)">
           <ion-label>Technology</ion-label>
         </ion-item>
-        <ion-item>
+        <ion-item [routerLink]="'/category/sports'" routerDirection="forward" (ionChange)="go($event)">
           <ion-label>Sports</ion-label>
         </ion-item>
       </ion-list>
