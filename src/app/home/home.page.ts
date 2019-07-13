@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { ApiService } from './../api.service';
+import { ApiService } from '../api.service';
 // import { LoadingController } from '@ionic/angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss']
 })
-export class Tab1Page {
+export class HomePage {
   articles;
   webUrl;
 

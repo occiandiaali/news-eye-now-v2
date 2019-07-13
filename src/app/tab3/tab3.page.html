@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content id="categories-list-back" padding>
     <ion-list class="content-background">
         <ion-item [routerLink]="'/category/entertainment'" routerDirection="forward" (ionChange)="go($event)">
           <ion-label>Entertainment</ion-label>
@@ -25,4 +25,5 @@
           <ion-label>Sports</ion-label>
         </ion-item>
       </ion-list>
+      <ion-img src="../assets/eyes-logo-main.png" alt="" id="logo"></ion-img>
 </ion-content>

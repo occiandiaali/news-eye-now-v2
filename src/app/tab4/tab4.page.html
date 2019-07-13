@@ -1,9 +1,23 @@
 <ion-header>
   <ion-toolbar class="top-bar">
     <ion-title>Chat Bot</ion-title>
+    <ion-icon slot="end" name="arrow-round-back" [routerLink]="''" padding></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="app-backdrop">
+  <ion-card>
+    <ion-card-content color="tertiary">
+      <ion-card-header >
+        <h2>Chat a little with a friendly robot</h2>
+      </ion-card-header>
+        <ion-button ion-button full color="secondary" outline>Launch Bot</ion-button>
+        <ion-button>
+            <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-button>
+    </ion-card-content>
+      
+  </ion-card>
+    
 
 </ion-content>
